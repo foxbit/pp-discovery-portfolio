@@ -142,30 +142,7 @@ export default function Home() {
         </div>
       </div>
       
-      {/* Visual Asset Section */}
-      <motion.div 
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="relative rounded-2xl overflow-hidden h-[400px] shadow-2xl border border-border"
-      >
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent z-10" />
-        <img 
-          src="/screenshot-site-pp.png" 
-          alt="PP Concursos Website" 
-          className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
-        />
-        <div className="absolute bottom-0 left-0 p-8 z-20 max-w-2xl">
-          <span className="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider mb-4 border border-white/30">
-            Interface Atual
-          </span>
-          <h3 className="text-3xl font-bold text-white mb-2">Identidade Visual Consolidada</h3>
-          <p className="text-white/80 text-lg">
-            A marca já possui força e reconhecimento. O desafio não é visual, mas estrutural e tecnológico.
-          </p>
-        </div>
-      </motion.div>
+
     </Layout>
   );
 }
