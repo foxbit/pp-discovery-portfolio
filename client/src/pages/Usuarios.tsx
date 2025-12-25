@@ -25,7 +25,8 @@ const content = {
         objetivo: "Ter plano de estudos eficiente, estruturado e mensurável",
         dor: "Gasta tempo excessivo organizando planilhas e materiais dispersos",
         citacao: "Eu tenho o melhor material com a PP, mas gasto uma energia enorme gerenciando planilhas e apps pra saber se estou realmente progredindo.",
-        motivadores: ["Clareza", "Organização", "Acompanhamento"]
+        motivadores: ["Clareza", "Organização", "Acompanhamento"],
+        imagem: "/mariana.png"
       },
       {
         id: "rafael",
@@ -37,7 +38,8 @@ const content = {
         objetivo: "Descobrir a melhor forma de estudar e manter motivação",
         dor: "Sente-se perdido entre tantas disciplinas e materiais diferentes",
         citacao: "Eu começo animado, mas depois me perco no meio dos PDFs e mensagens. Parece que estudo muito e aprendo pouco.",
-        motivadores: ["Apoio", "Pertencimento", "Resultados visíveis"]
+        motivadores: ["Apoio", "Pertencimento", "Resultados visíveis"],
+        imagem: "/rafael.png"
       },
       {
         id: "camila",
@@ -49,7 +51,8 @@ const content = {
         objetivo: "Evoluir para cargos mais altos sem abrir mão da estabilidade",
         dor: "Modelo atual não se adapta ao seu ritmo nem ao seu tempo",
         citacao: "Eu não preciso que me digam o que estudar, preciso que me ajudem a ver se estou evoluindo — e me motivem quando eu não estiver.",
-        motivadores: ["Equilíbrio", "Autonomia", "Propósito"]
+        motivadores: ["Equilíbrio", "Autonomia", "Propósito"],
+        imagem: "/camila.png"
       }
     ]
   },
@@ -113,8 +116,12 @@ export default function Usuarios() {
               <VitrineCard className="border-primary/10 bg-gradient-to-br from-white to-blue-50/30">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                   <div className="lg:col-span-4 flex flex-col items-center text-center lg:items-start lg:text-left border-b lg:border-b-0 lg:border-r border-border pb-8 lg:pb-0 lg:pr-8">
-                    <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
-                      <User size={48} weight="duotone" />
+                    <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-md mb-4 bg-white">
+                      <img 
+                        src={persona.imagem} 
+                        alt={persona.nome} 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <h3 className="text-3xl font-bold text-primary mb-1">{persona.nome}</h3>
                     <span className="text-sm font-bold uppercase tracking-wider text-primary/60 mb-6">{persona.subtitulo}</span>
