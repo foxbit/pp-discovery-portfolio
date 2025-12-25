@@ -99,15 +99,15 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="prose prose-lg prose-slate max-w-none text-muted-foreground"
         >
-          <p>
+          <p className="mb-12 leading-relaxed">
             A Ponto a Ponto Concursos (PP) não é apenas mais um curso preparatório. Fundada em 2018, ela nasceu de uma inquietação: o mercado estava cheio de conteúdo, mas vazio de cuidado. Enquanto grandes players vendiam videoaulas em massa, a PP decidiu vender acompanhamento. Deu certo. Tão certo que o modelo artesanal que os consagrou tornou-se, ironicamente, o teto que os impedia de voar mais alto.
           </p>
-          <p>
+          <p className="leading-relaxed">
             O sucesso inicial foi construído sobre a proximidade humana: mentores que conheciam os alunos pelo nome, cronogramas feitos à mão e suporte via WhatsApp. Mas escalar esse nível de atenção sem tecnologia revelou-se impossível. O que antes era um diferencial competitivo — o "fazer tudo no braço" — transformou-se em um gargalo operacional que ameaçava a saúde da equipe e a qualidade da entrega. Esta é a história de como transformamos esse paradoxo em um plano de evolução digital.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 mt-24">
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-border/60 relative overflow-hidden group hover:shadow-md transition-all">
             <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
               <Buildings size={120} weight="duotone" className="text-primary" />
