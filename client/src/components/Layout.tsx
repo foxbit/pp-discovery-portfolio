@@ -37,10 +37,8 @@ export default function Layout({ children }: LayoutProps) {
     <div className="flex min-h-screen bg-background text-foreground font-sans overflow-hidden">
       {/* Sidebar Navigation - Desktop */}
       <aside className="hidden md:flex flex-col w-64 h-screen fixed left-0 top-0 border-r border-border bg-sidebar z-50 shadow-sm">
-        <div className="p-6 flex items-center gap-3 border-b border-border/50">
-          <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-md shadow-primary/20">
-            PP
-          </div>
+        <div className="p-6 border-b border-border/50">
+          <img src="/logo.svg" alt="PP Concursos" className="h-8 w-auto mb-2" />
           <div className="flex flex-col">
             <span className="font-bold text-primary text-sm tracking-tight">PP Discovery</span>
             <span className="text-[10px] text-muted-foreground uppercase tracking-wider font-medium">Portfolio Case</span>
@@ -83,13 +81,35 @@ export default function Layout({ children }: LayoutProps) {
         </nav>
 
         <div className="p-4 border-t border-border/50">
-          <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-4 border border-primary/10">
+          <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-4 border border-primary/10 mb-4">
             <p className="text-xs font-medium text-primary mb-2">Discovery Finalizado</p>
             <div className="w-full bg-white/50 h-1.5 rounded-full overflow-hidden mb-2">
               <div className="bg-green-500 h-full w-full rounded-full" />
             </div>
             <p className="text-[10px] text-muted-foreground">100% concluído</p>
           </div>
+
+          <a 
+            href="https://portifolio-arcreator.netlify.app/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-white border border-border rounded-xl p-3 flex items-center gap-3 hover:border-primary/30 hover:shadow-md transition-all cursor-pointer group relative overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/0 to-primary/5 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500" />
+            
+            <div className="w-10 h-10 rounded-full overflow-hidden border border-border shrink-0">
+              <img src="/avatar-angelo.png" alt="Angelo Rosa" className="w-full h-full object-cover" />
+            </div>
+            
+            <div className="flex-1 min-w-0 relative z-10">
+              <p className="text-sm font-bold text-primary truncate">Angelo Rosa</p>
+              <p className="text-xs text-muted-foreground truncate">Product Designer</p>
+            </div>
+            
+            <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-colors relative z-10">
+              <CaretRight size={14} weight="bold" />
+            </div>
+          </a>
         </div>
       </aside>
 
