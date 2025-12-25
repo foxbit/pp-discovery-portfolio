@@ -42,6 +42,22 @@ export default function Mercado() {
         subtitle={content.subtitle} 
       />
 
+      <div className="max-w-4xl mx-auto mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="prose prose-lg prose-slate max-w-none text-muted-foreground"
+        >
+          <p>
+            O mercado de preparação para concursos públicos é vasto, competitivo e, muitas vezes, saturado de promessas milagrosas. Para posicionar a PP Concursos de forma estratégica, realizamos uma análise comparativa abrangente, examinando tanto os gigantes consolidados quanto os players de nicho que inovam em metodologia.
+          </p>
+          <p>
+            Identificamos que, embora existam muitas plataformas de conteúdo (videoaulas e PDFs) e ferramentas de questões, há uma lacuna clara no segmento de "gestão de aprendizado". A maioria dos concorrentes foca na entrega de material, mas falha em ensinar o aluno a estudar ou em acompanhar seu progresso de forma humanizada. Foi nesse espaço em branco — entre o conteúdo massificado e a mentoria individual inescalável — que encontramos a oportunidade de ouro para a PP.
+          </p>
+        </motion.div>
+      </div>
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
         <VitrineCard className="h-full bg-gradient-to-br from-primary/5 to-transparent border-primary/10">
           <h2 className="text-3xl font-bold text-primary mb-6 leading-tight">

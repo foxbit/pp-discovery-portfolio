@@ -62,6 +62,22 @@ export default function Metodologia() {
         subtitle={content.subtitle} 
       />
 
+      <div className="max-w-4xl mx-auto mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="prose prose-lg prose-slate max-w-none text-muted-foreground"
+        >
+          <p>
+            Para garantir que a solução proposta não fosse baseada apenas em suposições, estruturamos um processo de Discovery rigoroso e multifacetado. Acreditamos que entender o problema em profundidade é o passo mais importante para desenhar a solução correta. Por isso, mergulhamos na realidade dos estudantes e da operação da PP Concursos através de uma abordagem qualitativa e exploratória.
+          </p>
+          <p>
+            Nossa investigação combinou a escuta ativa de usuários reais com a análise fria do mercado e dos documentos internos. Não buscamos apenas validar hipóteses, mas descobrir padrões de comportamento e dores latentes que nem mesmo os alunos conseguiam verbalizar claramente. O resultado foi um mapa detalhado das necessidades humanas e técnicas que guiaram cada decisão de design deste projeto.
+          </p>
+        </motion.div>
+      </div>
+
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
         <div className="lg:col-span-5">
           <div className="sticky top-24">

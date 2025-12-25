@@ -68,6 +68,22 @@ export default function Insights() {
         subtitle={content.subtitle} 
       />
 
+      <div className="max-w-4xl mx-auto mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="prose prose-lg prose-slate max-w-none text-muted-foreground"
+        >
+          <p>
+            Dados brutos não tomam decisões; insights sim. Após mergulhar nas dores dos usuários e nas lacunas do mercado, sintetizamos todo o aprendizado em direcionamentos estratégicos claros. Esta etapa marca a "virada da análise": o momento em que deixamos de olhar para o problema e começamos a desenhar a solução.
+          </p>
+          <p>
+            Definimos 5 Padrões Estratégicos que transformam cada fraqueza identificada em uma oportunidade de inovação. Além disso, estabelecemos os Princípios de Design que servirão como bússola para o desenvolvimento do produto, garantindo que cada funcionalidade, botão ou interação reforce a proposta de valor central da PP: a humanização escalável.
+          </p>
+        </motion.div>
+      </div>
+
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
         <div className="lg:col-span-4">
           <div className="sticky top-24">

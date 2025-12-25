@@ -62,6 +62,22 @@ export default function Funcionalidades() {
         subtitle={content.subtitle} 
       />
 
+      <div className="max-w-4xl mx-auto mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="prose prose-lg prose-slate max-w-none text-muted-foreground"
+        >
+          <p>
+            A arquitetura da solução não é apenas uma lista de recursos, mas a materialização da estratégia. Para responder aos desafios de fragmentação e falta de escala, desenhamos um ecossistema integrado composto por 6 eixos funcionais. Cada módulo foi projetado para resolver uma dor específica da jornada do usuário, criando um fluxo contínuo de aprendizado.
+          </p>
+          <p>
+            Do planejamento automatizado à comunidade engajada, cada funcionalidade tem um propósito claro: retirar o atrito operacional para que o aluno possa focar no que importa — estudar. Abaixo, apresentamos a estrutura modular da Plataforma PP, detalhando como cada componente contribui para a experiência unificada que estamos construindo.
+          </p>
+        </motion.div>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
         {content.vitrine.eixos.map((eixo, index) => {
           const Icon = eixo.icon;

@@ -76,6 +76,22 @@ export default function Usuarios() {
         subtitle={content.subtitle} 
       />
 
+      <div className="max-w-4xl mx-auto mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="prose prose-lg prose-slate max-w-none text-muted-foreground"
+        >
+          <p>
+            Por trás de cada número de inscrição em um concurso, existe uma história de sacrifício, ansiedade e esperança. Para projetar uma plataforma que realmente funcione, precisávamos ir além dos dados demográficos e entender a psicologia do concurseiro. Quem são eles? O que os motiva a acordar às 5 da manhã para estudar? O que os faz desistir no meio do caminho?
+          </p>
+          <p>
+            Através de entrevistas em profundidade, mapeamos não apenas os perfis de usuários (personas), mas também a jornada emocional que eles percorrem. Descobrimos que a maior dor não é a falta de conteúdo, mas a solidão e a desorganização. O "Ciclo Vicioso do Concurseiro" — entusiasmo inicial, seguido de sobrecarga, desorganização e culpa — foi o padrão comportamental mais crítico que nossa solução precisava quebrar.
+          </p>
+        </motion.div>
+      </div>
+
       <div className="mb-16">
         <h2 className="text-2xl font-bold text-primary mb-8">As Personas do Ecossistema</h2>
         

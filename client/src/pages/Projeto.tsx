@@ -68,6 +68,22 @@ export default function Projeto() {
         subtitle={content.subtitle} 
       />
 
+      <div className="max-w-4xl mx-auto mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="prose prose-lg prose-slate max-w-none text-muted-foreground"
+        >
+          <p>
+            O projeto de transformação digital da PP Concursos não nasceu de uma demanda estética, mas de uma necessidade de sobrevivência operacional. Após anos operando com processos manuais que limitavam o crescimento, a empresa chegou a um ponto de inflexão: ou digitalizava sua inteligência pedagógica, ou estagnava diante da própria complexidade.
+          </p>
+          <p>
+            O escopo contratado visava atacar as raízes desse problema, propondo não apenas um "site novo", mas um ecossistema completo de gestão de aprendizado. O objetivo central era retirar a carga operacional dos ombros dos fundadores e mentores, permitindo que a tecnologia cuidasse da logística enquanto os humanos cuidavam dos alunos. Abaixo, detalhamos os desafios críticos mapeados e a solução arquitetada para superá-los.
+          </p>
+        </motion.div>
+      </div>
+
       <div className="mb-16">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-2xl font-bold text-primary">Os 6 Desafios Críticos</h2>
