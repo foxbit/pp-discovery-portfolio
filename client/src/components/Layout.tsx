@@ -51,22 +51,22 @@ export default function Layout({ children }: LayoutProps) {
             const Icon = item.icon;
             
             return (
-              <Link key={item.path} href={item.path}>
-                <a className={cn(
+              <Link 
+                key={item.path} 
+                href={item.path}
+                className={cn(
                   "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 group relative",
                   isActive 
                     ? "bg-primary/10 text-primary shadow-sm" 
                     : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
-                )}>
-                  <Icon 
-                    size={18} 
-                    weight={isActive ? "fill" : "regular"}
-                    className={cn("transition-colors", isActive ? "text-primary" : "text-muted-foreground group-hover:text-primary")}
-                  />
-                  {item.label}
-                  
-
-                </a>
+                )}
+              >
+                <Icon 
+                  size={18} 
+                  weight={isActive ? "fill" : "regular"}
+                  className={cn("transition-colors", isActive ? "text-primary" : "text-muted-foreground group-hover:text-primary")}
+                />
+                {item.label}
               </Link>
             );
           })}
@@ -122,19 +122,19 @@ export default function Layout({ children }: LayoutProps) {
           >
             <nav className="space-y-2">
               {menuItems.map((item) => (
-                <Link key={item.path} href={item.path}>
-                  <a 
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className={cn(
-                      "flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium border border-transparent",
-                      location === item.path 
-                        ? "bg-primary/5 border-primary/10 text-primary" 
-                        : "text-muted-foreground hover:bg-accent"
-                    )}
-                  >
-                    <item.icon size={20} weight={location === item.path ? "fill" : "regular"} />
-                    {item.label}
-                  </a>
+                <Link 
+                  key={item.path} 
+                  href={item.path}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={cn(
+                    "flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium border border-transparent",
+                    location === item.path 
+                      ? "bg-primary/5 border-primary/10 text-primary" 
+                      : "text-muted-foreground hover:bg-accent"
+                  )}
+                >
+                  <item.icon size={20} weight={location === item.path ? "fill" : "regular"} />
+                  {item.label}
                 </Link>
               ))}
             </nav>
