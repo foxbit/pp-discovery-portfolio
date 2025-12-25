@@ -65,15 +65,7 @@ export default function Layout({ children }: LayoutProps) {
                   />
                   {item.label}
                   
-                  {isActive && (
-                    <motion.div
-                      layoutId="activeIndicator"
-                      className="absolute right-2 w-1.5 h-1.5 rounded-full bg-primary"
-                      initial={{ scale: 0 }}
-                      animate={{ scale: 1 }}
-                      transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    />
-                  )}
+
                 </a>
               </Link>
             );
@@ -81,35 +73,30 @@ export default function Layout({ children }: LayoutProps) {
         </nav>
 
         <div className="p-4 border-t border-border/50">
-          <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-4 border border-primary/10 mb-4">
-            <p className="text-xs font-medium text-primary mb-2">Discovery Finalizado</p>
-            <div className="w-full bg-white/50 h-1.5 rounded-full overflow-hidden mb-2">
-              <div className="bg-green-500 h-full w-full rounded-full" />
-            </div>
-            <p className="text-[10px] text-muted-foreground">100% concluído</p>
-          </div>
-
-          <a 
-            href="https://portifolio-arcreator.netlify.app/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="bg-white border border-border rounded-xl p-3 flex items-center gap-3 hover:border-primary/30 hover:shadow-md transition-all cursor-pointer group relative overflow-hidden"
-          >
+          <div className="bg-white border border-border rounded-xl p-3 flex flex-col gap-3 hover:border-primary/30 hover:shadow-md transition-all group relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/0 to-primary/5 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500" />
             
-            <div className="w-10 h-10 rounded-full overflow-hidden border border-border shrink-0">
-              <img src="/avatar-angelo.png" alt="Angelo Rosa" className="w-full h-full object-cover" />
+            <div className="flex items-center gap-3 relative z-10">
+              <div className="w-10 h-10 rounded-full overflow-hidden border border-border shrink-0">
+                <img src="/avatar-angelo.png" alt="Angelo Rosa" className="w-full h-full object-cover" />
+              </div>
+              
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-bold text-primary truncate">Angelo Rosa</p>
+                <p className="text-xs text-muted-foreground truncate">Product Designer</p>
+              </div>
             </div>
             
-            <div className="flex-1 min-w-0 relative z-10">
-              <p className="text-sm font-bold text-primary truncate">Angelo Rosa</p>
-              <p className="text-xs text-muted-foreground truncate">Product Designer</p>
-            </div>
-            
-            <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-colors relative z-10">
-              <CaretRight size={14} weight="bold" />
-            </div>
-          </a>
+            <a 
+              href="https://portifolio-arcreator.netlify.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-full bg-primary/5 hover:bg-primary hover:text-white text-primary text-xs font-bold py-2 px-3 rounded-lg flex items-center justify-center gap-2 transition-colors relative z-10"
+            >
+              Ver portfólio
+              <CaretRight size={12} weight="bold" />
+            </a>
+          </div>
         </div>
       </aside>
 
@@ -174,9 +161,7 @@ export default function Layout({ children }: LayoutProps) {
             </motion.div>
           </AnimatePresence>
           
-          <footer className="py-8 px-8 text-center text-xs text-muted-foreground border-t border-border/40 mt-auto">
-            <p>© 2025 PP Concursos Discovery Case. Design Engineering by Manus.</p>
-          </footer>
+
         </div>
       </main>
     </div>

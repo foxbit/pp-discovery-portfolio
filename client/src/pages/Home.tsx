@@ -242,43 +242,7 @@ export default function Home() {
           </VitrineCard>
         </div>
 
-        <div className="lg:col-span-4 flex flex-col gap-6">
-          <div className="bg-white p-6 rounded-xl border border-border shadow-sm flex-1 flex flex-col justify-center items-center text-center">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
-              <ChartLineUp size={32} weight="duotone" />
-            </div>
-            <h3 className="font-bold text-lg mb-2">Dados Operacionais</h3>
-            <p className="text-sm text-muted-foreground mb-6">
-              Acesse os detalhes brutos sobre o modelo de negócio atual, ticket médio e estrutura de custos.
-            </p>
-            <LaboratorioModal title="Raio-X Operacional da PP">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-lg font-bold mb-2">Modelo de Negócio Atual</h3>
-                  <p>Venda avulsa de cursos (Lançamentos). Sem recorrência.</p>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="p-3 bg-muted rounded border border-border">
-                    <span className="text-xs text-muted-foreground block">Ticket Médio</span>
-                    <span className="font-mono font-bold text-primary">R$ 1.200 - 1.400</span>
-                  </div>
-                  <div className="p-3 bg-muted rounded border border-border">
-                    <span className="text-xs text-muted-foreground block">Canais</span>
-                    <span className="font-mono font-bold text-primary">WhatsApp + PDF</span>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold mb-2 text-red-600">Riscos Mapeados</h3>
-                  <ul className="list-disc pl-5 space-y-1 text-sm">
-                    <li>Pirataria imediata pós-lançamento</li>
-                    <li>Burnout da equipe de mentoria</li>
-                    <li>Invisibilidade de métricas de evasão</li>
-                  </ul>
-                </div>
-              </div>
-            </LaboratorioModal>
-          </div>
-        </div>
+
       </div>
 
       {/* CTA Section */}
