@@ -1,112 +1,112 @@
-# Playbook: Como Criar Portfólios de Discovery "State-of-the-Art"
+# Playbook: How to Build "State-of-the-Art" Discovery Portfolios
 
-Este documento serve como um guia prático para replicar a arquitetura, o design e a estratégia de conteúdo utilizada no projeto **PP Discovery Portfolio**. O objetivo é permitir que você transforme qualquer case técnico (Discovery, UX Research, Engenharia de Dados) em uma experiência narrativa premium.
-
----
-
-## 1. A Filosofia do Design: O Modelo "Iceberg"
-
-A premissa central deste portfólio é que **diferentes stakeholders consomem informação em diferentes profundidades**.
-
-### Camada 1: A Vitrine (Storytelling)
-*   **Público:** C-Levels, Recrutadores, Clientes em Prospecção.
-*   **Objetivo:** Vender a visão, o impacto e a qualidade do pensamento estratégico.
-*   **Formato:** Texto editorial (long-form), cards visuais, ícones, frases de destaque.
-*   **Regra de Ouro:** Nunca mostre uma tabela crua aqui. Transforme dados em insights visuais.
-
-### Camada 2: O Laboratório (Raw Data)
-*   **Público:** Lead Designers, PMs, Engenheiros, Auditores Técnicos.
-*   **Objetivo:** Provar a profundidade técnica e a veracidade do processo.
-*   **Formato:** Modais interativos, listas de requisitos, tabelas de dados, transcrições.
-*   **Regra de Ouro:** A transparência gera confiança. Permita que quem quiser "ver o código" (ou os dados brutos) possa fazê-lo sem sair da página.
+This document serves as a practical guide to replicating the architecture, design and content strategy used in the **PP Discovery Portfolio** project. The goal is to help you turn any technical case (Discovery, UX Research, Data Engineering) into a premium narrative experience.
 
 ---
 
-## 2. Estratégia de Conteúdo: Do Relatório à Narrativa
+## 1. The Design Philosophy: The "Iceberg" Model
 
-Não copie e cole seu relatório de Discovery. Reescreva-o como uma história.
+The central premise of this portfolio is that **different stakeholders consume information at different depths**.
 
-### Estrutura de Página Recomendada
-Para cada seção do seu portfólio (ex: Usuários, Mercado, Solução), siga este fluxo:
+### Layer 1: The Showcase (Storytelling)
+*   **Audience:** C-Levels, Recruiters, Prospects.
+*   **Goal:** Sell the vision, the impact and the quality of strategic thinking.
+*   **Format:** Editorial long-form text, visual cards, icons, highlight phrases.
+*   **Golden Rule:** Never show a raw table here. Turn data into visual insights.
 
-1.  **Cabeçalho (Section Header):** Título claro + Subtítulo que resume a conclusão principal.
-2.  **Introdução Narrativa (The Hook):** 2 a 3 parágrafos de texto corrido.
-    *   *Não diga:* "Fizemos 10 entrevistas."
-    *   *Diga:* "Para entender a dor real do usuário, mergulhamos na rotina de 10 pessoas e descobrimos um padrão invisível..."
-3.  **Destaques Visuais (Bento Grid/Cards):** Os 3-5 pontos principais em cards bonitos. Use ícones grandes e cores semânticas (Verde = Oportunidade, Vermelho = Dor).
-4.  **Aprofundamento (Modal/Laboratório):** Um botão ou link discreto ("Ver dados detalhados") que abre o conteúdo técnico.
-
-### Tom de Voz
-*   **Profissional, mas Humano:** Use "Nós descobrimos", "O desafio era".
-*   **Editorial:** Pense como uma revista (Wired, Harvard Business Review), não como um TCC.
-*   **Honesto:** Destaque as falhas e os desafios, não apenas os sucessos. O "Paradoxo do Crescimento" da PP é um exemplo de como uma fraqueza vira uma história poderosa.
+### Layer 2: The Laboratory (Raw Data)
+*   **Audience:** Lead Designers, PMs, Engineers, Technical Auditors.
+*   **Goal:** Prove the technical depth and the authenticity of the process.
+*   **Format:** Interactive modals, requirement lists, data tables, transcripts.
+*   **Golden Rule:** Transparency builds trust. Let anyone who wants to "see the code" (or the raw data) do so without leaving the page.
 
 ---
 
-## 3. Stack Tecnológica & Componentes Chave
+## 2. Content Strategy: From Report to Narrative
 
-Para replicar a qualidade visual e a interatividade, recomendamos esta stack:
+Do not copy and paste your Discovery report. Rewrite it as a story.
+
+### Recommended Page Structure
+For each section of your portfolio (e.g., Users, Market, Solution), follow this flow:
+
+1.  **Section Header:** Clear title + subtitle summarizing the main takeaway.
+2.  **Narrative Introduction (The Hook):** 2 to 3 paragraphs of running text.
+    *   *Don't say:* "We conducted 10 interviews."
+    *   *Say:* "To understand the user's real pain, we dove into the routine of 10 people and uncovered an invisible pattern..."
+3.  **Visual Highlights (Bento Grid/Cards):** The 3-5 key points in beautiful cards. Use large icons and semantic colors (Green = Opportunity, Red = Pain).
+4.  **Deep Dive (Modal/Laboratory):** A discreet button or link ("View detailed data") that opens the technical content.
+
+### Tone of Voice
+*   **Professional, but Human:** Use "We discovered", "The challenge was".
+*   **Editorial:** Think like a magazine (Wired, Harvard Business Review), not a thesis.
+*   **Honest:** Highlight failures and challenges, not just successes. PP's "Growth Paradox" is an example of how a weakness becomes a powerful story.
+
+---
+
+## 3. Technology Stack & Key Components
+
+To replicate the visual quality and interactivity, we recommend this stack:
 
 *   **Framework:** React (Vite) + TypeScript
-*   **Estilização:** Tailwind CSS (pela velocidade e consistência de design tokens)
-*   **Animação:** Framer Motion (essencial para a sensação "premium")
-*   **Ícones:** Phosphor Icons (consistentes e elegantes)
+*   **Styling:** Tailwind CSS (for speed and consistency of design tokens)
+*   **Animation:** Framer Motion (essential for the "premium" feel)
+*   **Icons:** Phosphor Icons (consistent and elegant)
 
-### Componentes Essenciais (Copie estes padrões)
+### Essential Components (Copy these patterns)
 
-#### A. `Layout.tsx` (Navegação Lateral)
-Uma sidebar fixa à esquerda que funciona como índice do relatório.
-*   *Por que:* Dá a sensação de um "livro digital" ou dashboard, diferente de um site de marketing comum.
+#### A. `Layout.tsx` (Side Navigation)
+A fixed left sidebar that works as a report index.
+*   *Why:* It gives the feel of a "digital book" or dashboard, unlike a common marketing site.
 
-#### B. `VitrineCard.tsx` (O Bloco de Construção)
-Um componente de card flexível com:
-*   Sombra suave (`shadow-sm` a `shadow-md` no hover).
-*   Borda sutil (`border-border`).
-*   Animação de entrada (`framer-motion` fade-in-up).
-*   Efeito de hover (`scale-105` ou `lift`).
+#### B. `VitrineCard.tsx` (The Building Block)
+A flexible card component with:
+*   Soft shadow (`shadow-sm` to `shadow-md` on hover).
+*   Subtle border (`border-border`).
+*   Entrance animation (framer-motion fade-in-up).
+*   Hover effect (`scale-105` or "lift").
 
-#### C. `LaboratorioModal.tsx` (A Camada Oculta)
-Um componente Dialog/Modal que recebe qualquer conteúdo `children`.
-*   *Uso:* Coloque tabelas gigantes, listas de 50 requisitos ou fluxogramas complexos aqui dentro. Mantenha a página limpa.
-
----
-
-## 4. Guia Passo a Passo de Execução
-
-### Passo 1: Extração e Estrutura (O Esqueleto)
-1.  Pegue seu relatório original (PDF/Doc).
-2.  Crie um arquivo `sitemap.txt` definindo as seções (ex: Contexto, Pesquisa, Ideação).
-3.  Para cada seção, escreva o "Resumo Narrativo" (os parágrafos de introdução).
-
-### Passo 2: Setup do Projeto
-1.  Inicie um projeto React + Tailwind.
-2.  Defina suas cores no `tailwind.config.js` ou `index.css`:
-    *   `primary`: Cor da marca (ex: Azul Marinho).
-    *   `muted`: Cor de fundo suave (ex: Cinza Gelo).
-    *   `accent`: Cor de destaque (ex: Verde Sucesso).
-3.  Instale `framer-motion` e `phosphor-react`.
-
-### Passo 3: Desenvolvimento em Camadas
-1.  **Crie o Layout:** Sidebar + Área de Conteúdo.
-2.  **Crie a Home:** Conte a história da empresa/projeto. Use a estrutura de "Blog Post" que criamos.
-3.  **Crie as Páginas Internas:** Use o padrão Introdução -> Cards -> Modal.
-
-### Passo 4: Polimento (O "State-of-the-Art")
-1.  **Animações de Entrada:** Nada deve aparecer "seco". Tudo deve deslizar suavemente (`y: 20` -> `y: 0`, `opacity: 0` -> `opacity: 1`).
-2.  **Micro-interações:** Botões devem reagir ao clique. Links devem mudar de cor.
-3.  **Responsividade:** Teste se a sidebar vira um menu hambúrguer no mobile.
+#### C. `LaboratorioModal.tsx` (The Hidden Layer)
+A Dialog/Modal component that accepts any `children` content.
+*   *Usage:* Put giant tables, lists of 50 requirements or complex flowcharts inside it. Keep the page clean.
 
 ---
 
-## 5. Checklist de Qualidade Final
+## 4. Step-by-Step Execution Guide
 
-Antes de entregar, verifique:
-- [ ] **Leiturabilidade:** Os textos introdutórios estão fluídos? (Leia em voz alta).
-- [ ] **Hierarquia:** Títulos são maiores que subtítulos? Cores de destaque são usadas com parcimônia?
-- [ ] **Navegação:** É fácil ir de uma seção para outra?
-- [ ] **Performance:** As animações travam? (Otimize se necessário).
-- [ ] **Storytelling:** O portfólio responde à pergunta "Qual era o problema e como você resolveu?"
+### Step 1: Extraction and Structure (The Skeleton)
+1.  Take your original report (PDF/Doc).
+2.  Create a `sitemap.txt` file defining the sections (e.g., Context, Research, Ideation).
+3.  For each section, write the "Narrative Summary" (the introduction paragraphs).
+
+### Step 2: Project Setup
+1.  Start a React + Tailwind project.
+2.  Define your colors in `tailwind.config.js` or `index.css`:
+    *   `primary`: Brand color (e.g., Navy Blue).
+    *   `muted`: Soft background color (e.g., Ice Gray).
+    *   `accent`: Highlight color (e.g., Success Green).
+3.  Install `framer-motion` and `phosphor-react`.
+
+### Step 3: Layered Development
+1.  **Create the Layout:** Sidebar + Content Area.
+2.  **Create the Home:** Tell the company/project story. Use the "Blog Post" structure we created.
+3.  **Create the Inner Pages:** Use the Introduction -> Cards -> Modal pattern.
+
+### Step 4: Polish (The "State-of-the-Art")
+1.  **Entrance Animations:** Nothing should appear "dry". Everything should slide smoothly (`y: 20` -> `y: 0`, `opacity: 0` -> `opacity: 1`).
+2.  **Micro-interactions:** Buttons must react to clicks. Links must change color.
+3.  **Responsiveness:** Test whether the sidebar becomes a hamburger menu on mobile.
 
 ---
 
-**Dica Final:** O segredo não é a tecnologia, é a **curadoria**. O que você *escolhe não mostrar* na vitrine é tão importante quanto o que você mostra. Use o "Laboratório" para o resto.
+## 5. Final Quality Checklist
+
+Before delivering, check:
+- [ ] **Readability:** Are the introductory texts fluid? (Read them aloud).
+- [ ] **Hierarchy:** Are headings larger than subheadings? Are highlight colors used sparingly?
+- [ ] **Navigation:** Is it easy to move from one section to another?
+- [ ] **Performance:** Do the animations lag? (Optimize if necessary).
+- [ ] **Storytelling:** Does the portfolio answer the question "What was the problem and how did you solve it?"
+
+---
+
+**Final Tip:** The secret is not the technology, it is **curation**. What you *choose not to show* in the showcase is as important as what you show. Use the "Laboratory" for the rest.
