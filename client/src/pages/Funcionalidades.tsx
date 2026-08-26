@@ -8,46 +8,46 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 const content = {
-  title: "Funcionalidades Levantadas",
-  subtitle: "Módulos e capacidades da plataforma",
+  title: "Features Identified",
+  subtitle: "Platform modules and capabilities",
   vitrine: {
-    headline: "Arquitetura de Solução em 6 Eixos",
-    description: "As funcionalidades foram organizadas em 6 eixos que cobrem toda a jornada do aluno.",
+    headline: "Solution Architecture in 6 Pillars",
+    description: "The features were organized into 6 pillars that cover the entire student journey.",
     eixos: [
       {
         numero: 1,
-        titulo: "Planejamento da Jornada",
-        descricao: "Cronogramas dinâmicos, metas personalizadas e adaptação ao ritmo do aluno",
+        titulo: "Journey Planning",
+        descricao: "Dynamic schedules, personalized goals and adaptation to the student's pace",
         icon: CalendarCheck
       },
       {
         numero: 2,
-        titulo: "Biblioteca e Material Base",
-        descricao: "Centralização de conteúdo, videoaulas, PDFs e materiais didáticos",
+        titulo: "Library and Base Material",
+        descricao: "Centralization of content, video lectures, PDFs and teaching materials",
         icon: Books
       },
       {
         numero: 3,
-        titulo: "Reforço do Conhecimento",
-        descricao: "Banco de questões, simulados e revisão inteligente",
+        titulo: "Knowledge Reinforcement",
+        descricao: "Question bank, mock exams and smart review",
         icon: Exam
       },
       {
         numero: 4,
-        titulo: "Painel de Desempenho",
-        descricao: "Dashboards de progresso, indicadores e relatórios de evolução",
+        titulo: "Performance Dashboard",
+        descricao: "Progress dashboards, indicators and evolution reports",
         icon: ChartLineUp
       },
       {
         numero: 5,
-        titulo: "Comunidade",
-        descricao: "Fórum, trocas entre alunos e senso de pertencimento",
+        titulo: "Community",
+        descricao: "Forum, exchanges between students and a sense of belonging",
         icon: UsersThree
       },
       {
         numero: 6,
-        titulo: "Elementos Transversais",
-        descricao: "Notificações, gamificação, acompanhamento e suporte",
+        titulo: "Cross-cutting Elements",
+        descricao: "Notifications, gamification, follow-up and support",
         icon: BellRinging
       }
     ]
@@ -70,10 +70,10 @@ export default function Funcionalidades() {
           className="prose prose-lg prose-slate max-w-none text-muted-foreground"
         >
           <p>
-            A arquitetura da solução não é apenas uma lista de recursos, mas a materialização da estratégia. Para responder aos desafios de fragmentação e falta de escala, desenhamos um ecossistema integrado composto por 6 eixos funcionais. Cada módulo foi projetado para resolver uma dor específica da jornada do usuário, criando um fluxo contínuo de aprendizado.
+            The solution architecture is not just a list of features; it is the materialization of the strategy. To address the challenges of fragmentation and lack of scale, we designed an integrated ecosystem made up of 6 functional pillars. Each module was designed to solve a specific pain in the user journey, creating a continuous learning flow.
           </p>
           <p>
-            Do planejamento automatizado à comunidade engajada, cada funcionalidade tem um propósito claro: retirar o atrito operacional para que o aluno possa focar no que importa — estudar. Abaixo, apresentamos a estrutura modular da Plataforma PP, detalhando como cada componente contribui para a experiência unificada que estamos construindo.
+            From automated planning to an engaged community, every feature has a clear purpose: remove operational friction so the student can focus on what matters — studying. Below, we present the modular structure of the PP Platform, detailing how each component contributes to the unified experience we are building.
           </p>
         </motion.div>
       </div>
@@ -100,16 +100,16 @@ export default function Funcionalidades() {
               </p>
               
               <div className="pt-4 border-t border-border">
-                <LaboratorioModal title={`Detalhes: ${eixo.titulo}`} triggerText="Ver Requisitos">
+                <LaboratorioModal title={`Details: ${eixo.titulo}`} triggerText="View Requirements">
                   <div className="space-y-4">
                     <p className="text-muted-foreground italic">
-                      Lista detalhada de requisitos funcionais para o módulo de {eixo.titulo}.
+                      Detailed list of functional requirements for the {eixo.titulo} module.
                     </p>
                     <ul className="space-y-2">
                       {[1, 2, 3, 4, 5].map((i) => (
                         <li key={i} className="flex items-start gap-2 p-2 hover:bg-muted/50 rounded">
                           <Check size={16} className="text-green-600 mt-0.5" />
-                          <span className="text-sm">Requisito funcional detalhado {eixo.numero}.{i} - Descrição técnica da funcionalidade específica para este módulo.</span>
+                          <span className="text-sm">Detailed functional requirement {eixo.numero}.{i} - Technical description of the specific feature for this module.</span>
                         </li>
                       ))}
                     </ul>
@@ -123,14 +123,14 @@ export default function Funcionalidades() {
 
       <div className="bg-muted/30 rounded-2xl p-8 md:p-12 border border-border text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-          Pronto para ver o resultado?
+          Ready to see the result?
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-          Este portfólio documenta a fase de Discovery. O desenvolvimento da plataforma segue os princípios aqui estabelecidos.
+          This portfolio documents the Discovery phase. Platform development follows the principles established here.
         </p>
         <Link href="/">
           <Button variant="outline" className="rounded-full px-8 py-6 border-primary/20 text-primary hover:bg-primary/5">
-            Voltar ao Início
+            Back to Home
           </Button>
         </Link>
       </div>

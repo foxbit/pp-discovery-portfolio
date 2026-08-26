@@ -9,64 +9,64 @@ import { Link } from "wouter";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const content = {
-  title: "Mapeamento do Usuário",
-  subtitle: "Personas, jornadas e necessidades reais",
+  title: "User Mapping",
+  subtitle: "Personas, journeys and real needs",
   vitrine: {
-    headline: "Três Personas que Representam o Universo PP",
-    description: "O discovery consolidou três personas representativas que traduzem necessidades, motivações e frustrações reais dos estudantes.",
+    headline: "Three Personas that Represent the PP Universe",
+    description: "The discovery consolidated three representative personas that translate students' real needs, motivations and frustrations.",
     personas: [
       {
         id: "mariana",
         nome: "Mariana",
-        subtitulo: "A Concurseira Organizada",
+        subtitulo: "The Organized Exam Candidate",
         idade: 32,
-        profissao: "Advogada",
-        tempoEstudo: "2 anos",
-        objetivo: "Ter plano de estudos eficiente, estruturado e mensurável",
-        dor: "Gasta tempo excessivo organizando planilhas e materiais dispersos",
-        citacao: "Eu tenho o melhor material com a PP, mas gasto uma energia enorme gerenciando planilhas e apps pra saber se estou realmente progredindo.",
-        motivadores: ["Clareza", "Organização", "Acompanhamento"],
+        profissao: "Lawyer",
+        tempoEstudo: "2 years",
+        objetivo: "Have an efficient, structured and measurable study plan",
+        dor: "Spends excessive time organizing spreadsheets and scattered materials",
+        citacao: "I have the best material with PP, but I spend a huge amount of energy managing spreadsheets and apps to know if I'm really progressing.",
+        motivadores: ["Clarity", "Organization", "Follow-up"],
         imagem: "/mariana.png"
       },
       {
         id: "rafael",
         nome: "Rafael",
-        subtitulo: "O Iniciante Desorganizado",
+        subtitulo: "The Disorganized Beginner",
         idade: 27,
-        profissao: "Servidor temporário",
-        tempoEstudo: "6 meses",
-        objetivo: "Descobrir a melhor forma de estudar e manter motivação",
-        dor: "Sente-se perdido entre tantas disciplinas e materiais diferentes",
-        citacao: "Eu começo animado, mas depois me perco no meio dos PDFs e mensagens. Parece que estudo muito e aprendo pouco.",
-        motivadores: ["Apoio", "Pertencimento", "Resultados visíveis"],
+        profissao: "Temporary civil servant",
+        tempoEstudo: "6 months",
+        objetivo: "Find the best way to study and keep motivation",
+        dor: "Feels lost among so many subjects and different materials",
+        citacao: "I start excited, but then I get lost in the middle of PDFs and messages. It feels like I study a lot and learn little.",
+        motivadores: ["Support", "Belonging", "Visible results"],
         imagem: "/rafael.png"
       },
       {
         id: "camila",
         nome: "Camila",
-        subtitulo: "A Persistente Equilibrista",
+        subtitulo: "The Persistent Balancer",
         idade: 35,
-        profissao: "Técnica judiciária",
-        tempoEstudo: "4 anos",
-        objetivo: "Evoluir para cargos mais altos sem abrir mão da estabilidade",
-        dor: "Modelo atual não se adapta ao seu ritmo nem ao seu tempo",
-        citacao: "Eu não preciso que me digam o que estudar, preciso que me ajudem a ver se estou evoluindo — e me motivem quando eu não estiver.",
-        motivadores: ["Equilíbrio", "Autonomia", "Propósito"],
+        profissao: "Court technician",
+        tempoEstudo: "4 years",
+        objetivo: "Move up to higher positions without giving up stability",
+        dor: "Current model doesn't adapt to her pace or her time",
+        citacao: "I don't need you to tell me what to study — I need you to help me see if I'm evolving, and motivate me when I'm not.",
+        motivadores: ["Balance", "Autonomy", "Purpose"],
         imagem: "/camila.png"
       }
     ]
   },
   laboratorio: {
     jornada: {
-      titulo: "O Ciclo Vicioso do Concurseiro",
+      titulo: "The Exam Candidate's Vicious Cycle",
       fases: [
-        { numero: 1, nome: "Entusiasmo Inicial", descricao: "Aluno recebe novo cronograma e se sente altamente motivado" },
-        { numero: 2, nome: "Desorganização Progressiva", descricao: "Barreiras práticas começam a impactar rotina, aluno começa a se atrasar" },
-        { numero: 3, nome: "Fadiga Cognitiva", descricao: "Invisibilidade do progresso se instala, aluno se esforça mas não vê resultados" },
-        { numero: 4, nome: "Desmotivação Emocional", descricao: "Barreiras emocionais atingem pico, engajamento despenca" },
-        { numero: 5, nome: "Ruptura ou Recomeço", descricao: "Aluno abandona temporariamente ou recomeça o ciclo" }
+        { numero: 1, nome: "Initial Enthusiasm", descricao: "Student receives a new schedule and feels highly motivated" },
+        { numero: 2, nome: "Progressive Disorganization", descricao: "Practical barriers start to impact the routine; student starts falling behind" },
+        { numero: 3, nome: "Cognitive Fatigue", descricao: "Progress invisibility sets in; student works hard but sees no results" },
+        { numero: 4, nome: "Emotional Demotivation", descricao: "Emotional barriers peak and engagement plummets" },
+        { numero: 5, nome: "Break or Restart", descricao: "Student temporarily quits or restarts the cycle" }
       ],
-      pontosCriticos: "Transição entre 2ª e 4ª semana é mais vulnerável"
+      pontosCriticos: "The transition between weeks 2 and 4 is the most vulnerable"
     }
   }
 };
@@ -87,16 +87,16 @@ export default function Usuarios() {
           className="prose prose-lg prose-slate max-w-none text-muted-foreground"
         >
           <p>
-            Por trás de cada número de inscrição em um concurso, existe uma história de sacrifício, ansiedade e esperança. Para projetar uma plataforma que realmente funcione, precisávamos ir além dos dados demográficos e entender a psicologia do concurseiro. Quem são eles? O que os motiva a acordar às 5 da manhã para estudar? O que os faz desistir no meio do caminho?
+            Behind every exam registration number there is a story of sacrifice, anxiety and hope. To design a platform that actually works, we needed to go beyond demographic data and understand the psychology of the exam candidate. Who are they? What motivates them to wake up at 5 a.m. to study? What makes them give up halfway?
           </p>
           <p>
-            Através de entrevistas em profundidade, mapeamos não apenas os perfis de usuários (personas), mas também a jornada emocional que eles percorrem. Descobrimos que a maior dor não é a falta de conteúdo, mas a solidão e a desorganização. O "Ciclo Vicioso do Concurseiro" — entusiasmo inicial, seguido de sobrecarga, desorganização e culpa — foi o padrão comportamental mais crítico que nossa solução precisava quebrar.
+            Through in-depth interviews, we mapped not only user profiles (personas), but also the emotional journey they go through. We discovered that the biggest pain is not lack of content, but loneliness and disorganization. The "Exam Candidate's Vicious Cycle" — initial enthusiasm, followed by overload, disorganization and guilt — was the most critical behavioral pattern our solution needed to break.
           </p>
         </motion.div>
       </div>
 
       <div className="mb-16">
-        <h2 className="text-2xl font-bold text-primary mb-8">As Personas do Ecossistema</h2>
+        <h2 className="text-2xl font-bold text-primary mb-8">The Ecosystem Personas</h2>
         
         <Tabs defaultValue="mariana" className="w-full">
           <TabsList className="grid w-full grid-cols-3 mb-8 bg-muted/50 p-1 rounded-xl">
@@ -128,15 +128,15 @@ export default function Usuarios() {
                     
                     <div className="w-full space-y-3 text-sm">
                       <div className="flex justify-between py-2 border-b border-border/50">
-                        <span className="text-muted-foreground">Idade</span>
-                        <span className="font-medium">{persona.idade} anos</span>
+                        <span className="text-muted-foreground">Age</span>
+                        <span className="font-medium">{persona.idade} years old</span>
                       </div>
                       <div className="flex justify-between py-2 border-b border-border/50">
-                        <span className="text-muted-foreground">Profissão</span>
+                        <span className="text-muted-foreground">Profession</span>
                         <span className="font-medium">{persona.profissao}</span>
                       </div>
                       <div className="flex justify-between py-2 border-b border-border/50">
-                        <span className="text-muted-foreground">Tempo de Estudo</span>
+                        <span className="text-muted-foreground">Study Time</span>
                         <span className="font-medium">{persona.tempoEstudo}</span>
                       </div>
                     </div>
@@ -153,7 +153,7 @@ export default function Usuarios() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <h4 className="flex items-center gap-2 font-bold text-primary mb-3">
-                          <Target size={20} /> Objetivo Principal
+                          <Target size={20} /> Main Goal
                         </h4>
                         <p className="text-muted-foreground text-sm leading-relaxed">
                           {persona.objetivo}
@@ -161,7 +161,7 @@ export default function Usuarios() {
                       </div>
                       <div>
                         <h4 className="flex items-center gap-2 font-bold text-red-500 mb-3">
-                          <HeartBreak size={20} /> Maior Dor
+                          <HeartBreak size={20} /> Biggest Pain
                         </h4>
                         <p className="text-muted-foreground text-sm leading-relaxed">
                           {persona.dor}
@@ -170,7 +170,7 @@ export default function Usuarios() {
                     </div>
                     
                     <div>
-                      <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-3">Motivadores Chave</h4>
+                      <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-3">Key Motivators</h4>
                       <div className="flex flex-wrap gap-2">
                         {persona.motivadores.map((m, i) => (
                           <span key={i} className="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium border border-green-100">
@@ -189,13 +189,13 @@ export default function Usuarios() {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         <div className="lg:col-span-8">
-          <VitrineCard title="A Jornada Atual (AS-IS)" icon={<Clock size={24} />}>
+          <VitrineCard title="The Current Journey (AS-IS)" icon={<Clock size={24} />}>
             <div className="relative pl-8 border-l-2 border-dashed border-border space-y-8 py-2">
               {content.laboratorio.jornada.fases.map((fase, index) => (
                 <div key={index} className="relative">
                   <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-white border-4 border-muted-foreground/30" />
                   <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-1">
-                    <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Fase {fase.numero}</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Phase {fase.numero}</span>
                     <h4 className="font-bold text-primary">{fase.nome}</h4>
                   </div>
                   <p className="text-sm text-muted-foreground">{fase.descricao}</p>
@@ -206,9 +206,9 @@ export default function Usuarios() {
             <div className="mt-8 p-4 bg-red-50 border border-red-100 rounded-lg flex items-start gap-3">
               <Warning size={24} className="text-red-500 shrink-0 mt-0.5" />
               <div>
-                <h4 className="font-bold text-red-700 text-sm mb-1">Ponto Crítico de Ruptura</h4>
+                <h4 className="font-bold text-red-700 text-sm mb-1">Critical Breaking Point</h4>
                 <p className="text-red-600 text-sm">
-                  {content.laboratorio.jornada.pontosCriticos}. É aqui que a falta de estrutura digital se torna fatal para a constância.
+                  {content.laboratorio.jornada.pontosCriticos}. This is where the lack of digital structure becomes fatal to consistency.
                 </p>
               </div>
             </div>
@@ -217,13 +217,13 @@ export default function Usuarios() {
         
         <div className="lg:col-span-4 flex flex-col gap-6">
           <VitrineCard className="bg-primary text-white border-none flex-1 flex flex-col justify-center text-center">
-            <h3 className="text-2xl font-bold mb-4">Como quebrar esse ciclo?</h3>
+            <h3 className="text-2xl font-bold mb-4">How to break this cycle?</h3>
             <p className="text-white/80 mb-8">
-              Identificamos 5 padrões estratégicos para transformar essa jornada de dor em uma experiência de fluxo.
+              We identified 5 strategic patterns to turn this painful journey into a flow experience.
             </p>
             <Link href="/insights">
               <Button className="w-full bg-white text-primary hover:bg-white/90 font-semibold group">
-                Ver Soluções Estratégicas <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                See Strategic Solutions <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
           </VitrineCard>

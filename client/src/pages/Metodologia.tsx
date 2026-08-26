@@ -8,48 +8,48 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 const content = {
-  title: "Metodologia de Discovery",
-  subtitle: "Abordagem qualitativa, exploratória e centrada no usuário",
+  title: "Discovery Methodology",
+  subtitle: "Qualitative, exploratory and user-centered approach",
   vitrine: {
-    headline: "Pesquisa Profunda com Usuários Reais",
-    description: "O discovery foi estruturado em múltiplas frentes metodológicas para cruzar diferentes fontes de informação e gerar visão abrangente.",
+    headline: "Deep Research with Real Users",
+    description: "The discovery was structured across multiple methodological fronts to cross-reference different information sources and generate a comprehensive view.",
     metodologias: [
       {
-        nome: "Entrevistas Qualitativas",
-        descricao: "11 entrevistas em profundidade com candidatos e ex-candidatos de diferentes perfis.",
+        nome: "Qualitative Interviews",
+        descricao: "11 in-depth interviews with candidates and former candidates of different profiles.",
         icon: Users
       },
       {
-        nome: "Análise de Concorrentes",
-        descricao: "Benchmark detalhado de plataformas educacionais para identificar lacunas.",
+        nome: "Competitor Analysis",
+        descricao: "Detailed benchmark of educational platforms to identify gaps.",
         icon: PresentationChart
       },
       {
-        nome: "Análise Documental",
-        descricao: "Levantamento de boas práticas pedagógicas e referências de mercado.",
+        nome: "Document Analysis",
+        descricao: "Survey of pedagogical best practices and market references.",
         icon: FileText
       },
       {
-        nome: "Consolidação de Personas",
-        descricao: "Síntese de padrões observados em arquétipos representativos.",
+        nome: "Persona Consolidation",
+        descricao: "Synthesis of observed patterns into representative archetypes.",
         icon: Users
       },
       {
-        nome: "Workshops com Stakeholders",
-        descricao: "Sessões colaborativas para validar achados e co-criar soluções.",
+        nome: "Stakeholder Workshops",
+        descricao: "Collaborative sessions to validate findings and co-create solutions.",
         icon: Lightbulb
       }
     ]
   },
   laboratorio: {
-    abordagem: "Qualitativa e exploratória, com objetivo de compreender em profundidade o comportamento, motivações e dificuldades dos estudantes.",
+    abordagem: "Qualitative and exploratory, aiming to deeply understand students' behavior, motivations and difficulties.",
     fases: [
-      "Definição de objetivos e planejamento",
-      "Coleta de dados através de múltiplas metodologias",
-      "Análise qualitativa e identificação de padrões",
-      "Síntese de personas e jornadas",
-      "Consolidação de insights e oportunidades",
-      "Formulação de direcionamentos estratégicos"
+      "Definition of objectives and planning",
+      "Data collection through multiple methodologies",
+      "Qualitative analysis and pattern identification",
+      "Synthesis of personas and journeys",
+      "Consolidation of insights and opportunities",
+      "Formulation of strategic directions"
     ]
   }
 };
@@ -70,10 +70,10 @@ export default function Metodologia() {
           className="prose prose-lg prose-slate max-w-none text-muted-foreground"
         >
           <p>
-            Para garantir que a solução proposta não fosse baseada apenas em suposições, estruturamos um processo de Discovery rigoroso e multifacetado. Acreditamos que entender o problema em profundidade é o passo mais importante para desenhar a solução correta. Por isso, mergulhamos na realidade dos estudantes e da operação da PP Concursos através de uma abordagem qualitativa e exploratória.
+            To ensure the proposed solution was not based only on assumptions, we structured a rigorous, multifaceted Discovery process. We believe that deeply understanding the problem is the most important step in designing the right solution. That is why we immersed ourselves in the reality of students and PP Concursos' operations through a qualitative, exploratory approach.
           </p>
           <p>
-            Nossa investigação combinou a escuta ativa de usuários reais com a análise fria do mercado e dos documentos internos. Não buscamos apenas validar hipóteses, mas descobrir padrões de comportamento e dores latentes que nem mesmo os alunos conseguiam verbalizar claramente. O resultado foi um mapa detalhado das necessidades humanas e técnicas que guiaram cada decisão de design deste projeto.
+            Our investigation combined active listening to real users with a cold analysis of the market and internal documents. We did not just seek to validate hypotheses, but to uncover behavioral patterns and latent pain points that even the students themselves could not clearly articulate. The result was a detailed map of human and technical needs that guided every design decision in this project.
           </p>
         </motion.div>
       </div>
@@ -88,20 +88,20 @@ export default function Metodologia() {
               {content.vitrine.description}
             </p>
             
-            <LaboratorioModal title="Processo Metodológico Completo">
+            <LaboratorioModal title="Complete Methodological Process">
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-lg font-bold mb-4 border-b border-border pb-2">Abordagem Científica</h3>
+                  <h3 className="text-lg font-bold mb-4 border-b border-border pb-2">Scientific Approach</h3>
                   <p className="mb-4">{content.laboratorio.abordagem}</p>
                 </div>
                 
                 <div>
-                  <h3 className="text-lg font-bold mb-4 border-b border-border pb-2">Fases do Discovery</h3>
+                  <h3 className="text-lg font-bold mb-4 border-b border-border pb-2">Discovery Phases</h3>
                   <div className="relative pl-8 border-l-2 border-primary/10 space-y-8">
                     {content.laboratorio.fases.map((fase, i) => (
                       <div key={i} className="relative">
                         <div className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-white border-4 border-primary" />
-                        <h4 className="font-bold text-primary mb-1">Fase {i + 1}</h4>
+                        <h4 className="font-bold text-primary mb-1">Phase {i + 1}</h4>
                         <p className="text-muted-foreground">{fase}</p>
                       </div>
                     ))}
@@ -139,20 +139,20 @@ export default function Metodologia() {
       <div className="bg-muted/30 rounded-2xl p-8 md:p-12 border border-border text-center">
         <MagnifyingGlass size={48} weight="duotone" className="text-primary mx-auto mb-6 opacity-50" />
         <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-          O que descobrimos?
+          What did we find out?
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-          A pesquisa revelou um mercado em transformação e necessidades profundas dos usuários que não estavam sendo atendidas.
+          The research revealed a market in transformation and deep user needs that were not being met.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link href="/mercado">
             <Button variant="outline" className="rounded-full px-6 border-primary/20 text-primary hover:bg-primary/5">
-              Ver Análise de Mercado
+              View Market Analysis
             </Button>
           </Link>
           <Link href="/usuarios">
             <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 shadow-lg shadow-primary/20 group">
-              Conhecer os Usuários <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              Meet the Users <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
         </div>

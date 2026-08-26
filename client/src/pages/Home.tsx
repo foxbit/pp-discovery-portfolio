@@ -21,64 +21,64 @@ import {
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
-// Dados expandidos do relatório de Discovery
+// Expanded data from the Discovery report
 const content = {
-  title: "Sobre a PP Concursos",
-  subtitle: "A trajetória de uma empresa que cresceu pela humanidade e travou pela operação",
+  title: "About PP Concursos",
+  subtitle: "The story of a company that grew through human care and stalled on operations",
   intro: {
-    headline: "O Paradoxo do Crescimento Artesanal",
-    text: "A Ponto a Ponto Concursos (PP) não é apenas mais um curso preparatório. Fundada em 2018, ela nasceu de uma inquietação: o mercado estava cheio de conteúdo, mas vazio de cuidado. Enquanto grandes players vendiam videoaulas em massa, a PP decidiu vender acompanhamento. Deu certo. Tão certo que o modelo artesanal que os consagrou tornou-se, ironicamente, o teto que os impedia de voar mais alto."
+    headline: "The Handcrafted Growth Paradox",
+    text: "Ponto a Ponto Concursos (PP) is not just another prep course. Founded in 2018, it was born from a concern: the market was full of content, but empty of care. While big players sold video lectures at scale, PP chose to sell guidance. It worked. It worked so well that the handcrafted model that made them famous ironically became the ceiling that kept them from flying higher."
   },
   historia: {
     ano: "2018",
-    origem: "Nascida da iniciativa de professores que viam alunos perdidos em meio a excesso de material sem direção.",
-    diferencial: "Mentoria Coletiva: Planejamento estruturado + Acompanhamento próximo + Suporte direto.",
-    resultado: "Alta reputação, engajamento visceral e resultados expressivos de aprovação."
+    origem: "Born from the initiative of teachers who saw students lost amid an excess of directionless material.",
+    diferencial: "Collective Mentoring: Structured planning + Close follow-up + Direct support.",
+    resultado: "High reputation, visceral engagement and outstanding approval results."
   },
   swot: {
     forcas: [
-      "Metodologia validada e amada pelos alunos",
-      "Marca com alta percepção de valor e confiança",
-      "Proximidade real entre fundadores e estudantes",
-      "Conteúdo autoral de altíssima qualidade"
+      "Validated methodology loved by students",
+      "Brand with high perceived value and trust",
+      "Real closeness between founders and students",
+      "High-quality original content"
     ],
     fraquezas: [
-      "Dependência crítica dos fundadores na operação",
-      "Processos manuais baseados em planilhas e PDFs",
-      "Comunicação fragmentada (WhatsApp, E-mail, Drive)",
-      "Ausência total de dados estruturados de progresso"
+      "Critical dependence on founders for operations",
+      "Manual processes based on spreadsheets and PDFs",
+      "Fragmented communication (WhatsApp, Email, Drive)",
+      "Complete absence of structured progress data"
     ]
   },
   dores: [
     {
-      titulo: "O Gargalo dos Fundadores",
-      descricao: "“Tudo passa por nós. Se a gente para, a operação para.” A centralização não é ego, é necessidade de um processo não documentado.",
+      titulo: "The Founder Bottleneck",
+      descricao: "\"Everything goes through us. If we stop, the operation stops.\" The centralization is not ego; it is the necessity of an undocumented process.",
       icon: UsersThree
     },
     {
-      titulo: "A Fragilidade da Pirataria",
-      descricao: "Materiais em PDF circulam livremente em grupos de Telegram minutos após o envio. O valor intelectual escoa sem controle.",
+      titulo: "The Piracy Weakness",
+      descricao: "PDF materials circulate freely in Telegram groups minutes after being sent. Intellectual value drains away without control.",
       icon: ShieldWarning
     },
     {
-      titulo: "O Caos Logístico",
-      descricao: "Alunos gastam mais tempo organizando arquivos e procurando links do que estudando. A experiência é fragmentada.",
+      titulo: "The Logistics Chaos",
+      descricao: "Students spend more time organizing files and hunting for links than studying. The experience is fragmented.",
       icon: Clock
     },
     {
-      titulo: "A Cegueira de Dados",
-      descricao: "“Não sabemos quem estuda de verdade.” Sem métricas, a PP voa às cegas, dependendo apenas do feeling dos mentores.",
+      titulo: "The Data Blindness",
+      descricao: "\"We don't know who actually studies.\" Without metrics, PP flies blind, relying only on mentors' gut feeling.",
       icon: ChartLineUp
     }
   ],
   vozDoUsuario: [
     {
-      quote: "Eu amo a PP, o material é incrível. Mas tem dia que eu passo 20 minutos procurando onde está o PDF da aula de hoje no grupo do WhatsApp.",
-      author: "Aluna Veterana, 3 anos de estudo"
+      quote: "I love PP, the material is incredible. But some days I spend 20 minutes looking for today's class PDF in the WhatsApp group.",
+      author: "Veteran Student, 3 years of study"
     },
     {
-      quote: "Sinto que estudo muito, mas não sei se estou saindo do lugar. Falta aquele feedback visual de 'você avançou 10%'.",
-      author: "Aluno Iniciante, 6 meses de casa"
+      quote: "I feel like I study a lot, but I don't know if I'm moving forward. I miss that visual feedback of 'you advanced 10%'.",
+      author: "New Student, 6 months in"
     }
   ]
 };
@@ -100,10 +100,10 @@ export default function Home() {
           className="prose prose-lg prose-slate max-w-none text-muted-foreground"
         >
           <p className="mb-12 leading-relaxed">
-            A Ponto a Ponto Concursos (PP) não é apenas mais um curso preparatório. Fundada em 2018, ela nasceu de uma inquietação: o mercado estava cheio de conteúdo, mas vazio de cuidado. Enquanto grandes players vendiam videoaulas em massa, a PP decidiu vender acompanhamento. Deu certo. Tão certo que o modelo artesanal que os consagrou tornou-se, ironicamente, o teto que os impedia de voar mais alto.
+            Ponto a Ponto Concursos (PP) is not just another prep course. Founded in 2018, it was born from a concern: the market was full of content, but empty of care. While big players sold video lectures at scale, PP chose to sell guidance. It worked. It worked so well that the handcrafted model that made them famous ironically became the ceiling that kept them from flying higher.
           </p>
           <p className="leading-relaxed">
-            O sucesso inicial foi construído sobre a proximidade humana: mentores que conheciam os alunos pelo nome, cronogramas feitos à mão e suporte via WhatsApp. Mas escalar esse nível de atenção sem tecnologia revelou-se impossível. O que antes era um diferencial competitivo — o "fazer tudo no braço" — transformou-se em um gargalo operacional que ameaçava a saúde da equipe e a qualidade da entrega. Esta é a história de como transformamos esse paradoxo em um plano de evolução digital.
+            The initial success was built on human closeness: mentors who knew students by name, hand-crafted schedules and WhatsApp support. But scaling that level of attention without technology proved impossible. What was once a competitive edge — the "do everything by hand" approach — turned into an operational bottleneck threatening team health and delivery quality. This is the story of how we turned that paradox into a digital evolution plan.
           </p>
         </motion.div>
 
@@ -112,12 +112,12 @@ export default function Home() {
             <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
               <Buildings size={120} weight="duotone" className="text-primary" />
             </div>
-            <span className="text-sm font-bold uppercase tracking-wider text-primary/60 mb-2 block">A Origem</span>
+            <span className="text-sm font-bold uppercase tracking-wider text-primary/60 mb-2 block">The Origin</span>
             <h3 className="text-3xl font-bold text-primary mb-4">{content.historia.ano}</h3>
             <p className="text-muted-foreground leading-relaxed relative z-10">
               {content.historia.origem}
               <br/><br/>
-              O diferencial sempre foi a <strong>{content.historia.diferencial}</strong>
+              The differentiator was always the <strong>{content.historia.diferencial}</strong>
             </p>
           </div>
 
@@ -125,12 +125,12 @@ export default function Home() {
             <div className="absolute bottom-0 right-0 p-4 opacity-10">
               <RocketLaunch size={120} weight="duotone" className="text-white" />
             </div>
-            <span className="text-sm font-bold uppercase tracking-wider text-white/60 mb-2 block">O Resultado</span>
-            <h3 className="text-3xl font-bold mb-4">Sucesso & Gargalo</h3>
+            <span className="text-sm font-bold uppercase tracking-wider text-white/60 mb-2 block">The Result</span>
+            <h3 className="text-3xl font-bold mb-4">Success & Bottleneck</h3>
             <p className="text-white/90 leading-relaxed relative z-10">
-              A reputação explodiu. As aprovações vieram. Mas cada novo aluno significava mais planilhas manuais, mais mensagens individuais e mais horas operacionais.
+              The reputation exploded. The approvals came. But each new student meant more manual spreadsheets, more individual messages and more operational hours.
               <br/><br/>
-              <strong>O crescimento tornou-se insustentável.</strong>
+              <strong>Growth became unsustainable.</strong>
             </p>
           </div>
         </div>
@@ -142,7 +142,7 @@ export default function Home() {
           <div className="h-px bg-border flex-1" />
           <h2 className="text-2xl font-bold text-primary flex items-center gap-2">
             <Warning size={24} className="text-red-500" />
-            O Diagnóstico Operacional
+            The Operational Diagnosis
           </h2>
           <div className="h-px bg-border flex-1" />
         </div>
@@ -175,9 +175,9 @@ export default function Home() {
         <Quotes size={64} weight="fill" className="text-primary/10 absolute top-8 left-8" />
         
         <div className="relative z-10 text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl font-bold text-primary mb-4">A Voz de Quem Estuda</h2>
+          <h2 className="text-3xl font-bold text-primary mb-4">The Voice of Those Who Study</h2>
           <p className="text-muted-foreground">
-            Nas entrevistas, ouvimos um padrão claro: amor pela marca, frustração com o processo.
+            In the interviews, we heard a clear pattern: love for the brand, frustration with the process.
           </p>
         </div>
 
@@ -210,11 +210,11 @@ export default function Home() {
       {/* SWOT Analysis & Lab Data */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
         <div className="lg:col-span-8">
-          <VitrineCard title="Balanço Estratégico (SWOT)" icon={<Target size={24} />}>
+          <VitrineCard title="Strategic Balance (SWOT)" icon={<Target size={24} />}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h4 className="flex items-center gap-2 font-bold text-green-700 mb-4 bg-green-50 p-2 rounded-lg">
-                  <TrendUp size={20} /> Forças (Preservar)
+                  <TrendUp size={20} /> Strengths (Preserve)
                 </h4>
                 <ul className="space-y-3">
                   {content.swot.forcas.map((item, i) => (
@@ -227,7 +227,7 @@ export default function Home() {
               </div>
               <div>
                 <h4 className="flex items-center gap-2 font-bold text-red-700 mb-4 bg-red-50 p-2 rounded-lg">
-                  <HeartBreak size={20} /> Fraquezas (Resolver)
+                  <HeartBreak size={20} /> Weaknesses (Solve)
                 </h4>
                 <ul className="space-y-3">
                   {content.swot.fraquezas.map((item, i) => (
@@ -247,13 +247,13 @@ export default function Home() {
 
       {/* CTA Section */}
       <div className="text-center max-w-2xl mx-auto">
-        <h2 className="text-2xl font-bold text-primary mb-4">O Diagnóstico está claro. E a solução?</h2>
+        <h2 className="text-2xl font-bold text-primary mb-4">The diagnosis is clear. And the solution?</h2>
         <p className="text-muted-foreground mb-8">
-          Entendemos quem a PP é e onde ela dói. O próximo passo foi desenhar o projeto que curaria essas dores sem matar a alma da empresa.
+          We understood who PP is and where it hurts. The next step was designing the project that would heal those pain points without killing the company's soul.
         </p>
         <Link href="/projeto">
           <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 py-6 text-lg font-semibold shadow-xl shadow-primary/20 group">
-            Ver o Projeto de Transformação <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            See the Transformation Project <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
         </Link>
       </div>

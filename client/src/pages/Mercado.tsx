@@ -8,29 +8,29 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 const content = {
-  title: "Pesquisa Mercadológica",
-  subtitle: "Análise de concorrentes, tendências e oportunidades",
+  title: "Market Research",
+  subtitle: "Analysis of competitors, trends and opportunities",
   vitrine: {
-    headline: "O Mercado de EdTech em Transformação",
-    description: "A análise de mercado revelou oportunidades claras para diferenciação através de humanidade, personalização e foco em resultados.",
+    headline: "The EdTech Market in Transformation",
+    description: "The market analysis revealed clear opportunities for differentiation through humanity, personalization and focus on results.",
     tendencias: [
-      { text: "Crescimento exponencial do mercado online", icon: TrendUp },
-      { text: "Demanda por aprendizado personalizado", icon: Users },
-      { text: "Importância de engajamento e comunidade", icon: Heart },
-      { text: "Integração de dados e analytics", icon: Database },
-      { text: "Tecnologia + Acompanhamento Humano", icon: Globe }
+      { text: "Exponential growth of the online market", icon: TrendUp },
+      { text: "Demand for personalized learning", icon: Users },
+      { text: "Importance of engagement and community", icon: Heart },
+      { text: "Data and analytics integration", icon: Database },
+      { text: "Technology + Human Follow-up", icon: Globe }
     ]
   },
   laboratorio: {
-    benchmarkConcorrentes: "Análise de 5+ plataformas concorrentes revelou que a maioria mantém modelo tradicional de ensino, baseado em transmissão passiva de conteúdo.",
+    benchmarkConcorrentes: "Analysis of 5+ competitor platforms revealed that most keep a traditional teaching model, based on passive content delivery.",
     lacunasIdentificadas: [
-      "Falta de personalização real e adaptação ao ritmo do aluno",
-      "Ausência de feedback claro sobre progresso",
-      "Comunicação dispersa e pouco estruturada",
-      "Falta de senso de comunidade e pertencimento",
-      "Modelos de negócio baseados em venda pontual"
+      "Lack of real personalization and adaptation to the student's pace",
+      "Absence of clear feedback on progress",
+      "Scattered, poorly structured communication",
+      "Lack of community and belonging",
+      "Business models based on one-off sales"
     ],
-    oportunidadesPP: "A PP pode se diferenciar através de: centralização, personalização adaptativa, feedback visível, engajamento humano e modelo recorrente"
+    oportunidadesPP: "PP can differentiate through: centralization, adaptive personalization, visible feedback, human engagement and a recurring model"
   }
 };
 
@@ -50,10 +50,10 @@ export default function Mercado() {
           className="prose prose-lg prose-slate max-w-none text-muted-foreground"
         >
           <p>
-            O mercado de preparação para concursos públicos é vasto, competitivo e, muitas vezes, saturado de promessas milagrosas. Para posicionar a PP Concursos de forma estratégica, realizamos uma análise comparativa abrangente, examinando tanto os gigantes consolidados quanto os players de nicho que inovam em metodologia.
+            The public exam prep market is vast, competitive and often saturated with miracle promises. To position PP Concursos strategically, we carried out a comprehensive comparative analysis, examining both the established giants and the niche players innovating in methodology.
           </p>
           <p>
-            Identificamos que, embora existam muitas plataformas de conteúdo (videoaulas e PDFs) e ferramentas de questões, há uma lacuna clara no segmento de "gestão de aprendizado". A maioria dos concorrentes foca na entrega de material, mas falha em ensinar o aluno a estudar ou em acompanhar seu progresso de forma humanizada. Foi nesse espaço em branco — entre o conteúdo massificado e a mentoria individual inescalável — que encontramos a oportunidade de ouro para a PP.
+            We found that, although there are many content platforms (video lectures and PDFs) and question tools, there is a clear gap in the "learning management" segment. Most competitors focus on delivering material, but fail to teach students how to study or to track their progress in a humanized way. It was in this white space — between mass-produced content and unscalable one-on-one mentoring — that we found the golden opportunity for PP.
           </p>
         </motion.div>
       </div>
@@ -89,7 +89,7 @@ export default function Mercado() {
         </VitrineCard>
 
         <div className="space-y-6">
-          <VitrineCard title="Onde os Concorrentes Falham" icon={<ChartLineUp size={24} />} delay={0.2}>
+          <VitrineCard title="Where Competitors Fail" icon={<ChartLineUp size={24} />} delay={0.2}>
             <div className="space-y-4">
               {content.laboratorio.lacunasIdentificadas.map((lacuna, i) => (
                 <div key={i} className="flex items-start gap-3 pb-4 border-b border-border last:border-0 last:pb-0">
@@ -99,15 +99,15 @@ export default function Mercado() {
               ))}
             </div>
             <div className="mt-6 pt-6 border-t border-border">
-              <LaboratorioModal title="Análise Competitiva Detalhada">
+              <LaboratorioModal title="Detailed Competitive Analysis">
                 <div className="space-y-8">
                   <div>
-                    <h3 className="text-lg font-bold mb-4 border-b border-border pb-2">Benchmark Geral</h3>
+                    <h3 className="text-lg font-bold mb-4 border-b border-border pb-2">General Benchmark</h3>
                     <p className="mb-4">{content.laboratorio.benchmarkConcorrentes}</p>
                   </div>
                   
                   <div className="bg-blue-50 p-6 rounded-lg border border-blue-100">
-                    <h3 className="text-lg font-bold mb-4 text-blue-900">Oportunidades de Diferenciação</h3>
+                    <h3 className="text-lg font-bold mb-4 text-blue-900">Differentiation Opportunities</h3>
                     <p className="text-blue-800 font-medium leading-relaxed">
                       {content.laboratorio.oportunidadesPP}
                     </p>
@@ -121,13 +121,13 @@ export default function Mercado() {
             className="bg-primary text-white border-none shadow-xl shadow-primary/20"
             delay={0.3}
           >
-            <h3 className="text-xl font-bold mb-4">A Oportunidade de Ouro</h3>
+            <h3 className="text-xl font-bold mb-4">The Golden Opportunity</h3>
             <p className="text-white/80 text-lg leading-relaxed mb-6">
-              Enquanto o mercado foca em conteúdo massificado, a PP tem a chance de escalar o que ninguém mais consegue: <strong>o cuidado humano.</strong>
+              While the market focuses on mass-produced content, PP has the chance to scale what no one else can: <strong>human care.</strong>
             </p>
             <Link href="/insights">
               <Button className="w-full bg-white text-primary hover:bg-white/90 font-semibold group">
-                Ver Insights Estratégicos <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                See Strategic Insights <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
           </VitrineCard>

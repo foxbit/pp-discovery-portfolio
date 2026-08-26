@@ -9,7 +9,7 @@ interface LaboratorioModalProps {
   children: React.ReactNode;
 }
 
-export default function LaboratorioModal({ title, triggerText = "Ver Dados Brutos", children }: LaboratorioModalProps) {
+export default function LaboratorioModal({ title, triggerText = "View Raw Data", children }: LaboratorioModalProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -25,7 +25,7 @@ export default function LaboratorioModal({ title, triggerText = "Ver Dados Bruto
               <FileText size={20} weight="duotone" />
             </div>
             <div>
-              <p className="text-xs font-mono text-muted-foreground uppercase tracking-wider mb-0.5">Laboratório de Dados</p>
+              <p className="text-xs font-mono text-muted-foreground uppercase tracking-wider mb-0.5">Data Laboratory</p>
               <DialogTitle className="text-xl font-bold text-primary">{title}</DialogTitle>
             </div>
           </div>

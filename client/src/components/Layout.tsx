@@ -20,13 +20,13 @@ interface LayoutProps {
 }
 
 const menuItems = [
-  { path: "/", label: "Sobre a Empresa", icon: House },
-  { path: "/projeto", label: "O Projeto", icon: Briefcase },
-  { path: "/metodologia", label: "Metodologia", icon: MagnifyingGlass },
-  { path: "/mercado", label: "Mercado", icon: ChartLineUp },
-  { path: "/usuarios", label: "Usuários", icon: Users },
+  { path: "/", label: "About the Company", icon: House },
+  { path: "/projeto", label: "The Project", icon: Briefcase },
+  { path: "/metodologia", label: "Methodology", icon: MagnifyingGlass },
+  { path: "/mercado", label: "Market", icon: ChartLineUp },
+  { path: "/usuarios", label: "Users", icon: Users },
   { path: "/insights", label: "Insights", icon: Lightbulb },
-  { path: "/funcionalidades", label: "Funcionalidades", icon: ListChecks },
+  { path: "/funcionalidades", label: "Features", icon: ListChecks },
 ];
 
 export default function Layout({ children }: LayoutProps) {
@@ -103,7 +103,7 @@ export default function Layout({ children }: LayoutProps) {
               rel="noopener noreferrer"
               className="w-full bg-primary/5 hover:bg-primary hover:text-white text-primary text-xs font-bold py-2 px-3 rounded-lg flex items-center justify-center gap-2 transition-colors relative z-10"
             >
-              Ver portfólio
+              View portfolio
               <CaretRight size={12} weight="bold" />
             </a>
           </div>

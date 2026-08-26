@@ -8,52 +8,52 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 const content = {
-  title: "O Projeto Contratado",
-  subtitle: "Desafios, escopo e oportunidades identificadas",
+  title: "The Contracted Project",
+  subtitle: "Challenges, scope and identified opportunities",
   vitrine: {
-    headline: "Transformando Dor em Oportunidade",
-    description: "O projeto de Discovery mapeou 6 desafios críticos que limitam a PP Concursos. Cada um deles representa uma oportunidade de valor estratégico.",
+    headline: "Turning Pain into Opportunity",
+    description: "The Discovery project mapped 6 critical challenges limiting PP Concursos. Each one represents a strategic value opportunity.",
     desafios: [
       {
-        titulo: "Dependência Operacional",
-        descricao: "A operação depende quase exclusivamente dos fundadores, criando gargalo crítico.",
+        titulo: "Operational Dependency",
+        descricao: "The operation depends almost exclusively on the founders, creating a critical bottleneck.",
         icon: Target
       },
       {
-        titulo: "Processos Fragmentados",
-        descricao: "Cronogramas e materiais dispersos entre múltiplas ferramentas e canais.",
+        titulo: "Fragmented Processes",
+        descricao: "Schedules and materials scattered across multiple tools and channels.",
         icon: Desktop
       },
       {
-        titulo: "Risco de Pirataria",
-        descricao: "Distribuição descontrolada de PDFs compromete propriedade intelectual.",
+        titulo: "Piracy Risk",
+        descricao: "Uncontrolled PDF distribution compromises intellectual property.",
         icon: LockKey
       },
       {
-        titulo: "Experiência Fragmentada",
-        descricao: "Jornada de estudos caótica, exigindo gestão excessiva do aluno.",
+        titulo: "Fragmented Experience",
+        descricao: "Chaotic study journey, demanding excessive management from the student.",
         icon: HeartBreak
       },
       {
-        titulo: "Ausência de Dados",
-        descricao: "Falta de métricas estruturadas impede decisão baseada em evidências.",
+        titulo: "Absence of Data",
+        descricao: "Lack of structured metrics prevents evidence-based decisions.",
         icon: ChartBar
       },
       {
-        titulo: "Sobrecarga da Equipe",
-        descricao: "Mentores enfrentam alta sobrecarga emocional e operacional.",
+        titulo: "Team Overload",
+        descricao: "Mentors face high emotional and operational overload.",
         icon: UsersThree
       }
     ]
   },
   laboratorio: {
-    escopo: "Desenvolvimento de um Editor de Conteúdo Interativo (WYSIWYG) e Leitor Digital (e-Reader) para criação e consumo de materiais didáticos baseados em blocos de conteúdo reutilizáveis.",
+    escopo: "Development of an Interactive Content Editor (WYSIWYG) and a Digital Reader (e-Reader) for creating and consuming educational materials based on reusable content blocks.",
     objetivos: [
-      "Centralizar cronogramas, materiais, videoaulas e comunicação em ambiente único",
-      "Automatizar tarefas operacionais para liberar mentores para acompanhamento pedagógico",
-      "Tornar o aprendizado visível e mensurável através de dados e indicadores",
-      "Potencializar o cuidado humano, não substituí-lo",
-      "Transicionar para modelo de negócio recorrente e sustentável"
+      "Centralize schedules, materials, video lectures and communication in a single environment",
+      "Automate operational tasks to free mentors for pedagogical follow-up",
+      "Make learning visible and measurable through data and indicators",
+      "Amplify human care, not replace it",
+      "Transition to a recurring, sustainable business model"
     ]
   }
 };
@@ -76,26 +76,26 @@ export default function Projeto() {
           className="prose prose-lg prose-slate max-w-none text-muted-foreground"
         >
           <p>
-            O projeto de transformação digital da PP Concursos não nasceu de uma demanda estética, mas de uma necessidade de sobrevivência operacional. Após anos operando com processos manuais que limitavam o crescimento, a empresa chegou a um ponto de inflexão: ou digitalizava sua inteligência pedagógica, ou estagnava diante da própria complexidade.
+            PP Concursos' digital transformation project was born not from an aesthetic demand, but from a need for operational survival. After years running on manual processes that limited growth, the company reached an inflection point: either it digitized its pedagogical intelligence, or it would stagnate in the face of its own complexity.
           </p>
           <p>
-            O escopo contratado visava atacar as raízes desse problema, propondo não apenas um "site novo", mas um ecossistema completo de gestão de aprendizado. O objetivo central era retirar a carga operacional dos ombros dos fundadores e mentores, permitindo que a tecnologia cuidasse da logística enquanto os humanos cuidavam dos alunos. Abaixo, detalhamos os desafios críticos mapeados e a solução arquitetada para superá-los.
+            The contracted scope aimed to attack the roots of the problem, proposing not just a "new website", but a complete learning management ecosystem. The central goal was to lift the operational burden off the founders' and mentors' shoulders, letting technology handle the logistics while humans took care of the students. Below, we detail the critical challenges identified and the solution architected to overcome them.
           </p>
         </motion.div>
       </div>
 
       <div className="mb-16">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold text-primary">Os 6 Desafios Críticos</h2>
-          <LaboratorioModal title="Escopo Técnico Detalhado">
+          <h2 className="text-2xl font-bold text-primary">The 6 Critical Challenges</h2>
+          <LaboratorioModal title="Detailed Technical Scope">
             <div className="space-y-8">
               <div>
-                <h3 className="text-lg font-bold mb-4 border-b border-border pb-2">Escopo Contratado</h3>
+                <h3 className="text-lg font-bold mb-4 border-b border-border pb-2">Contracted Scope</h3>
                 <p className="mb-4">{content.laboratorio.escopo}</p>
               </div>
               
               <div>
-                <h3 className="text-lg font-bold mb-4 border-b border-border pb-2">Objetivos Estratégicos</h3>
+                <h3 className="text-lg font-bold mb-4 border-b border-border pb-2">Strategic Objectives</h3>
                 <ul className="space-y-3">
                   {content.laboratorio.objetivos.map((obj, i) => (
                     <li key={i} className="flex items-start gap-3">
@@ -107,23 +107,23 @@ export default function Projeto() {
               </div>
 
               <div className="bg-muted/50 p-6 rounded-lg border border-border">
-                <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-4">Requisitos Funcionais Macro</h4>
+                <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-4">Macro Functional Requirements</h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                   <div className="p-3 bg-white rounded border border-border">
-                    <strong className="block text-primary mb-1">Editor WYSIWYG</strong>
-                    Criação de conteúdo modular com blocos reutilizáveis
+                    <strong className="block text-primary mb-1">WYSIWYG Editor</strong>
+                    Modular content creation with reusable blocks
                   </div>
                   <div className="p-3 bg-white rounded border border-border">
-                    <strong className="block text-primary mb-1">Leitor Digital</strong>
-                    Consumo interativo com anotações e progresso
+                    <strong className="block text-primary mb-1">Digital Reader</strong>
+                    Interactive consumption with annotations and progress
                   </div>
                   <div className="p-3 bg-white rounded border border-border">
-                    <strong className="block text-primary mb-1">Gestão de Versões</strong>
-                    Controle de alterações e histórico de documentos
+                    <strong className="block text-primary mb-1">Version Management</strong>
+                    Change control and document history
                   </div>
                   <div className="p-3 bg-white rounded border border-border">
-                    <strong className="block text-primary mb-1">Controle de Acesso</strong>
-                    Permissões granulares por curso e módulo
+                    <strong className="block text-primary mb-1">Access Control</strong>
+                    Granular permissions per course and module
                   </div>
                 </div>
               </div>
@@ -160,29 +160,29 @@ export default function Projeto() {
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-block py-1 px-3 rounded-full bg-white/10 text-white text-xs font-bold uppercase tracking-wider mb-6 border border-white/20">
-              A Solução Proposta
+              The Proposed Solution
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-              Um Ecossistema Digital Unificado
+              A Unified Digital Ecosystem
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Não apenas um site, mas uma plataforma completa que centraliza a experiência do aluno e automatiza a operação da empresa.
+              Not just a website, but a complete platform that centralizes the student experience and automates the company's operation.
             </p>
             <Link href="/metodologia">
               <Button className="bg-white text-primary hover:bg-white/90 rounded-full px-8 py-6 text-lg font-semibold shadow-xl shadow-black/10 group border-none">
-                Ver Metodologia <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                View Methodology <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              "Centralização Inteligente",
-              "Personalização Adaptativa",
-              "Acompanhamento Humano",
-              "Engajamento Visível",
-              "Base Escalável",
-              "Segurança de Conteúdo"
+              "Smart Centralization",
+              "Adaptive Personalization",
+              "Human Follow-up",
+              "Visible Engagement",
+              "Scalable Foundation",
+              "Content Security"
             ].map((item, i) => (
               <div key={i} className="bg-white/10 backdrop-blur-sm border border-white/10 p-4 rounded-xl flex items-center gap-3">
                 <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center shrink-0">

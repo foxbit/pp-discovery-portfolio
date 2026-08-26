@@ -8,54 +8,54 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 const content = {
-  title: "Insights-Chave e Oportunidades",
-  subtitle: "Da análise à ação estratégica",
+  title: "Key Insights & Opportunities",
+  subtitle: "From analysis to strategic action",
   vitrine: {
-    headline: "Cinco Padrões Estratégicos Revelados",
-    description: "A análise aprofundada revelou padrões que explicam as dores atuais e apontam caminhos de evolução.",
+    headline: "Five Strategic Patterns Revealed",
+    description: "The in-depth analysis revealed patterns that explain current pain points and point to paths of evolution.",
     padroes: [
       {
-        titulo: "A Fragmentação Impede o Foco",
-        descricao: "Jornada dispersa entre PDFs, WhatsApp e apps externos é barreira cognitiva que desvia energia do aprendizado",
-        oportunidade: "Centralizar o ecossistema de estudo em plataforma única e integrada",
+        titulo: "Fragmentation Blocks Focus",
+        descricao: "A journey scattered across PDFs, WhatsApp and external apps is a cognitive barrier that drains energy from learning",
+        oportunidade: "Centralize the study ecosystem in a single, integrated platform",
         icon: PuzzlePiece
       },
       {
-        titulo: "A Operação Manual Limita a Escala",
-        descricao: "Modelo dependente de execução manual atingiu teto operacional",
-        oportunidade: "Construir base tecnológica que automatize processos",
+        titulo: "Manual Operation Limits Scale",
+        descricao: "A model dependent on manual execution has hit its operational ceiling",
+        oportunidade: "Build a technology foundation that automates processes",
         icon: ChartBar
       },
       {
-        titulo: "Ausência de Feedback Invisibiliza Progresso",
-        descricao: "Alunos relatam sensação de estagnação por não conseguirem medir evolução",
-        oportunidade: "Tornar aprendizado visível e mensurável usando dados",
+        titulo: "Lack of Feedback Hides Progress",
+        descricao: "Students report feeling stuck because they can't measure their evolution",
+        oportunidade: "Make learning visible and measurable using data",
         icon: CheckCircle
       },
       {
-        titulo: "A Mentoria é a Alma e o Gargalo",
-        descricao: "Acompanhamento humano é ativo mais valioso mas formato atual é insustentável",
-        oportunidade: "Potencializar cuidado humano com automação do trivial",
+        titulo: "Mentoring is the Soul and the Bottleneck",
+        descricao: "Human follow-up is the most valuable asset, but the current format is unsustainable",
+        oportunidade: "Amplify human care with automation of the trivial",
         icon: UsersThree
       },
       {
-        titulo: "Modelo de Negócio Gera Instabilidade",
-        descricao: "Venda avulsa cria ciclo de picos e vales de faturamento",
-        oportunidade: "Transição para modelo de assinatura recorrente",
+        titulo: "Business Model Creates Instability",
+        descricao: "One-off sales create a cycle of revenue peaks and valleys",
+        oportunidade: "Transition to a recurring subscription model",
         icon: CurrencyDollar
       }
     ]
   },
   laboratorio: {
     principios: [
-      { titulo: "Tudo em um só lugar", aplicacao: "Unificar cronogramas, conteúdo, videoaulas, dúvidas e progresso em plataforma única" },
-      { titulo: "Aprendizado visível", aplicacao: "Criar indicadores claros e visuais de progresso com gráficos e metas" },
-      { titulo: "Autonomia guiada", aplicacao: "Oferecer orientação automatizada mantendo acompanhamento humano onde agrega valor" },
-      { titulo: "Personalização adaptativa", aplicacao: "Sistema aprende com comportamento do aluno e ajusta plano dinamicamente" },
-      { titulo: "Engajamento humano e constante", aplicacao: "Incorporar gamificação, comunidade e reconhecimento com mensagens empáticas" },
-      { titulo: "Clareza e foco na interação", aplicacao: "Criar canais organizados para dúvidas, feedbacks e anúncios" },
-      { titulo: "Decisões guiadas por dados", aplicacao: "Integrar métricas de desempenho para orientar ações pedagógicas" },
-      { titulo: "Propósito visível", aplicacao: "Projetar narrativa que relembre aluno de seu objetivo maior" }
+      { titulo: "Everything in one place", aplicacao: "Unify schedules, content, video lectures, questions and progress in a single platform" },
+      { titulo: "Visible learning", aplicacao: "Create clear, visual progress indicators with charts and goals" },
+      { titulo: "Guided autonomy", aplicacao: "Offer automated guidance while keeping human follow-up where it adds value" },
+      { titulo: "Adaptive personalization", aplicacao: "System learns from student behavior and adjusts the plan dynamically" },
+      { titulo: "Constant human engagement", aplicacao: "Incorporate gamification, community and recognition with empathetic messaging" },
+      { titulo: "Clarity and focus in interaction", aplicacao: "Create organized channels for questions, feedback and announcements" },
+      { titulo: "Data-driven decisions", aplicacao: "Integrate performance metrics to guide pedagogical actions" },
+      { titulo: "Visible purpose", aplicacao: "Design a narrative that reminds the student of their bigger goal" }
     ]
   }
 };
@@ -76,10 +76,10 @@ export default function Insights() {
           className="prose prose-lg prose-slate max-w-none text-muted-foreground"
         >
           <p>
-            Dados brutos não tomam decisões; insights sim. Após mergulhar nas dores dos usuários e nas lacunas do mercado, sintetizamos todo o aprendizado em direcionamentos estratégicos claros. Esta etapa marca a "virada da análise": o momento em que deixamos de olhar para o problema e começamos a desenhar a solução.
+            Raw data doesn't make decisions; insights do. After diving into user pain points and market gaps, we synthesized all the learning into clear strategic directions. This stage marks the "turn of the analysis": the moment we stop looking at the problem and start designing the solution.
           </p>
           <p>
-            Definimos 5 Padrões Estratégicos que transformam cada fraqueza identificada em uma oportunidade de inovação. Além disso, estabelecemos os Princípios de Design que servirão como bússola para o desenvolvimento do produto, garantindo que cada funcionalidade, botão ou interação reforce a proposta de valor central da PP: a humanização escalável.
+            We defined 5 Strategic Patterns that turn each identified weakness into an innovation opportunity. In addition, we established the Design Principles that will serve as a compass for product development, ensuring that every feature, button or interaction reinforces PP's central value proposition: scalable humanization.
           </p>
         </motion.div>
       </div>
@@ -94,7 +94,7 @@ export default function Insights() {
               {content.vitrine.description}
             </p>
             
-            <LaboratorioModal title="Princípios Norteadores de Design">
+            <LaboratorioModal title="Guiding Design Principles">
               <div className="grid grid-cols-1 gap-6">
                 {content.laboratorio.principios.map((principio, i) => (
                   <div key={i} className="p-4 bg-white border border-border rounded-lg">
@@ -132,7 +132,7 @@ export default function Insights() {
                     <div className="p-4 bg-green-50 border border-green-100 rounded-lg flex items-start gap-3">
                       <Lightbulb size={20} weight="fill" className="text-green-600 mt-0.5 shrink-0" />
                       <div>
-                        <span className="text-xs font-bold uppercase tracking-wider text-green-700 block mb-1">Oportunidade Estratégica</span>
+                        <span className="text-xs font-bold uppercase tracking-wider text-green-700 block mb-1">Strategic Opportunity</span>
                         <p className="text-green-800 font-medium text-sm">{padrao.oportunidade}</p>
                       </div>
                     </div>
@@ -148,14 +148,14 @@ export default function Insights() {
         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10" />
         <div className="relative z-10">
           <h2 className="text-2xl md:text-3xl font-bold mb-6">
-            Como traduzir isso em produto?
+            How to turn this into a product?
           </h2>
           <p className="text-white/80 text-lg max-w-2xl mx-auto mb-8">
-            Mapeamos as funcionalidades essenciais para materializar essa visão estratégica.
+            We mapped the essential features to bring this strategic vision to life.
           </p>
           <Link href="/funcionalidades">
             <Button className="bg-white text-primary hover:bg-white/90 rounded-full px-8 py-6 text-lg font-semibold shadow-xl shadow-black/20 group border-none">
-              Ver Funcionalidades <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              See Features <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
         </div>
