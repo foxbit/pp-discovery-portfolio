@@ -19,6 +19,8 @@ export default defineConfig({
   },
   envDir: path.resolve(import.meta.dirname),
   root: path.resolve(import.meta.dirname, "client"),
+  // Allows GH Pages subpath builds: VITE_BASE=/pp-discovery-portfolio/ pnpm build
+  base: process.env.VITE_BASE ?? "/",
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,

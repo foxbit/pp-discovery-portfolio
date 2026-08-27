@@ -1,0 +1,10 @@
+# Netlify build config
+[build]
+  command = "pnpm install --frozen-lockfile && pnpm build"
+  publish = "dist/public"
+
+# SPA fallback: client-side routing (wouter)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
